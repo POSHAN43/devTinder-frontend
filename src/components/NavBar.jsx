@@ -21,16 +21,16 @@ const NavBar = () => {
     }
 
   return (
-    <div className="navbar bg-gray-700 shadow-sm h-24">
+    <div className="navbar bg-gray-700 shadow-sm h-20 fixed z-10">
     <div className="flex-1">
-      <Link to="/" className="btn btn-ghost text-white text-3xl">👨‍💻 DevTinder</Link>
+      <Link to="/" className="btn btn-ghost text-white text-3xl whitespace-nowrap">👨‍💻 DevTinder</Link>
     </div>
     <div className="flex gap-2 items-center">
-      {user && (<p className='text-white text-xl'>Welcome, {user.firstName}</p>)}
+      {user && (<p className='text-white text-xl hidden sm:block'>Welcome, {user.firstName}</p>)}
       {user && (
       <div className="dropdown dropdown-end mx-5 ">
         
-        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ">
           <div className="w-10 rounded-full">
             <img
               alt="User photo"

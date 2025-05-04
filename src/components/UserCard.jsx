@@ -19,8 +19,8 @@ const UserCard = ({user}) => {
       }
     }
   return (
-    <div className='flex justify-center my-10'>
-      <div className="card bg-gray-700 w-96 shadow-sm">
+    
+      <div className="rounded-r-lg bg-gray-700 w-68 sm:w-72 md:w-92 shadow-sm">
   
     <img
     width={400}
@@ -28,7 +28,7 @@ const UserCard = ({user}) => {
       src={photoUrl || "https://media-hosting.imagekit.io/521aca5f74724def/user.webp?Expires=1840375877&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=uAzOHxOx4xGDnxT--ojhp~kNXdesTOpiI359rPeycEx6OsQyhzRiJaUC~Tcpe2yfzLzWfVwMUhIWdLxVUduDp-g~n7LGvPNSfoN7aUh2BXEyghqSFYAOrwkCyIIFIlVRQXrgWUQikh5Gg8iFz9YAUqapYow5nUAJKp9eZFYsRYgnDOfdtrRgOinmGhln-MRlAvxvbABXXJ56zQIm4EcZKkdlagBCoKREIwoesgYn7U2hSYKMJJolH8PrnSgHIB8XL3iqbSDBYxKpyO2PIAckR~bNP8BEw6RJ4mq9KOancpYn4SmSdAS4R5EmXbqfu0PTQX6A4N~lDGsOUyjF5VuP3g__"}
       alt="User" />
 
-  <div className="card-body">
+  <div className="card-body h-68">
     <h2 className="card-title text-white text-2xl">{firstName + " " + lastName}</h2>
     {age && gender && <span className='text-white'>{age + ", "+ gender}</span>}
     <p className='text-white'>{about}</p>
@@ -38,7 +38,6 @@ const UserCard = ({user}) => {
     </div>)}
   </div>
       </div>
-    </div>
   )
 }
 

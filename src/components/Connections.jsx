@@ -24,9 +24,9 @@ const Connections = () => {
   if (!connections) return;
   if (connections?.length === 0) return <h1 className="text-3xl text-center font-bold my-10">No connections Found</h1>;
   return (
-    <div className="flex justify-center align-center w-full my-10"> 
-    <div className=" my-10">
-      <h1 className="text-3xl text-center font-bold">My Coonections</h1>
+    <div className="flex justify-center h-screen w-full"> 
+    <div className=" mt-30">
+      <h1 className="text-3xl text-center font-bold">My Connections</h1>
       
       {connections?.map((connection) => {
         const { firstName, lastName, photoUrl, age, gender, about } =
@@ -34,7 +34,7 @@ const Connections = () => {
 
         return (
           
-            <div className=" bg-gray-700 shadow-sm flex justify-start item-center space-x-8 my-4 rounded-lg w-xl pl-4 h-36">
+            <div className=" bg-gray-700 shadow-sm flex justify-start item-center space-x-8 my-4 rounded-lg w-86 sm:w-lg md:w-xl pl-4 h-36">
                 <div className = "flex flex-col justify-center">
                 <img
                   src={photoUrl || "https://media-hosting.imagekit.io/521aca5f74724def/user.webp?Expires=1840375877&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=uAzOHxOx4xGDnxT--ojhp~kNXdesTOpiI359rPeycEx6OsQyhzRiJaUC~Tcpe2yfzLzWfVwMUhIWdLxVUduDp-g~n7LGvPNSfoN7aUh2BXEyghqSFYAOrwkCyIIFIlVRQXrgWUQikh5Gg8iFz9YAUqapYow5nUAJKp9eZFYsRYgnDOfdtrRgOinmGhln-MRlAvxvbABXXJ56zQIm4EcZKkdlagBCoKREIwoesgYn7U2hSYKMJJolH8PrnSgHIB8XL3iqbSDBYxKpyO2PIAckR~bNP8BEw6RJ4mq9KOancpYn4SmSdAS4R5EmXbqfu0PTQX6A4N~lDGsOUyjF5VuP3g__"}
